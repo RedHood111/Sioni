@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sioni</title>
+
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" />
+
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/bgstretcher.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+        //  Initialize Backgound Stretcher	   
+		$('BODY').bgStretcher({
+			images: ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg'],
+			imageWidth: 1024, 
+			imageHeight: 768, 
+			slideDirection: 'N',
+			slideShowSpeed: 1000,
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',
+			buttonPrev: '#prev',
+			buttonNext: '#next',
+			pagination: '#nav',
+			anchoring: 'left center',
+			anchoringImg: 'left center'
+		});
+		
+	});
+</script>
+
+
+</head>
+<body>
+    <div id="page" style="display: none_;">
+		</div>	
+</body>
+</html>
