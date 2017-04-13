@@ -22,6 +22,12 @@ div{position:relative;}
 		background:#e4e8e8;
 
 	}
+	.fa-phone-square{
+		color: #4e4545;
+	}
+	.fa-phone-square:hover{
+		color: #342e2e;
+	}
 	.right{
 		width:30%;
 		height:615px;
