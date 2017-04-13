@@ -1,22 +1,22 @@
 html, body{margin:0px; padding:0px; font-family:Arial, sans-serif;}
 div{position:relative;}
 .clear{clear:both;}
-.conteiner, {
-	width:1000px;
+.container, {
+	max-width:1000px;
 	margin:0px auto;
 }
-.conteiner{
-	padding:20px 0px 0px 220px;
+.container{
+	padding:0px 0px 0px 220px;
 	box-sizing:border-box;
 }
 	.left{
 		
-		width:300px;
-		height:640px;
+		width:24%;
+		height:615px;
 		z-index:15;
 		margin-left:-220px;
 		float:left;
-		background:#e1e1e1;
+		background:rgba(229, 231, 231, 0.87);
 	}
 	.phone{
 		background:#e4e8e8;
@@ -24,11 +24,11 @@ div{position:relative;}
 	}
 	.right{
 		width:30%;
-		height:640px;
+		height:615px;
 		float:left;
 		font-size:15px;
 		color:#000000;
-		background:#b5a29e;
+		background:rgba(230, 230, 230, 0.67);
 		/*opacity: 0.68;  прозрачность с текстом-решить*/
 	}
 	.right p,h3{margin:0px; padding: 30px 30px 0px 30px;}
@@ -38,7 +38,7 @@ div{position:relative;}
 
 		display:block;
 		width:100%;
-		height:100%;
+		height:auto;
 		margin:0px;
 		padding:0px;
 		list-style:none;
@@ -57,12 +57,11 @@ div{position:relative;}
 		color:#515151;
 		line-height:1.2em;
 		padding:10px 15px;
-		/*background:#3A9CD3;*/
+		
 		text-decoration:none;
 	}
 	.menuVertical ul  li:first-child a{border:0px;}
 	.menuVertical ul li a:hover, .menuVertical ul li:hover a{
-		/*background:#0A3CC1;*/
 		color: #272424;
 	}
 	.menuVertical ul li ul{
