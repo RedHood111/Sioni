@@ -1,62 +1,68 @@
 html, body{margin:0px; padding:0px; font-family:Arial, sans-serif;}
 div{position:relative;}
 .clear{clear:both;}
-#conteiner, {
+.conteiner, {
 	width:1000px;
 	margin:0px auto;
 }
-#conteiner{
+.conteiner{
 	padding:20px 0px 0px 220px;
 	box-sizing:border-box;
 }
-	#left{
-		background: #c98123;
+	.left{
+		
 		width:300px;
-		height:100%;
+		height:640px;
 		z-index:15;
 		margin-left:-220px;
 		float:left;
+		background:#e1e1e1;
 	}
-	#right{
+	.right{
 		width:30%;
+		height:520px;
 		float:left;
 		font-size:15px;
 		color:#000000;
+		padding: 60px;
+		background:#b5a29e;
+		/*opacity: 0.68;  прозрачность с текстом-решить*/
 	}
-	#right p{margin:0px; padding:0px 0px 10px 0px;}
+	.right p{margin:0px; padding:0px 0px 10px 0px;}
 /*************далее стили для вертикального выпадающего меню при наведении**************************/
-#menuVertical{width:100%;height:auto;}
-	#menuVertical ul{
+.menuVertical{width:100%;height:auto;}
+	.menuVertical ul{
+
 		display:block;
 		width:100%;
-		height:auto;
+		height:100%;
 		margin:0px;
 		padding:0px;
 		list-style:none;
 		position:relative;
 	}
-#menuVertical ul li{display:block; width:100%; height:auto; position:relative;}
-	#menuVertical ul li a{
+.menuVertical ul li{display:block; width:100%; height:auto; position:relative;}
+	.menuVertical ul li a{
 		position:relative;
 		display:block;
 		width:100%;
 		height:auto;
 		box-sizing:border-box;
-		font-size:13px;
+		font-size:23px;
 		text-transform:uppercase;
-		font-weight:bold;
-		color:#FBF7F7;
+		font-weight:semi-bold;
+		color:#515151;
 		line-height:1.2em;
 		padding:10px 15px;
-		background:#3A9CD3;
-		border-top:1px solid #236A92;
+		/*background:#3A9CD3;*/
 		text-decoration:none;
 	}
-	#menuVertical ul  li:first-child a{border:0px;}
-	#menuVertical ul li a:hover, #menuVertical ul li:hover a{
-		background:#0A3CC1;
+	.menuVertical ul  li:first-child a{border:0px;}
+	.menuVertical ul li a:hover, .menuVertical ul li:hover a{
+		/*background:#0A3CC1;*/
+		color: #272424;
 	}
-	#menuVertical ul li ul{
+	.menuVertical ul li ul{
 		position:absolute;
 		top:0px;
 		left:100%;
@@ -64,26 +70,19 @@ div{position:relative;}
 		width:auto;
 	}
 			/*******показываем выпадашку при наведении ********/
-#menuVertical ul li:hover ul{display:block;}
-	#menuVertical ul li ul li a{
+.menuVertical ul li:hover ul{display:block;}
+	.menuVertical ul li ul li a{
 	white-space:nowrap;
 	text-transform:none;
 	padding:5px 20px;
 	}
-#menuVertical ul li ul li a:hover{
+.menuVertical ul li ul li a:hover{
 	background:#75C1D4;
 	color:#0A3CC1;
 }
 
 
-/*
-	Background Stretcher jQuery Plugin
-	© 2011 ajaxBlender.com
-	For any questions please visit www.ajaxblender.com 
-	or email us at support@ajaxblender.com
-*/
-
-HTML {_background: url(/images/trans.gif) no-repeat fixed;}
+/*slider*/
 .bgstretcher-area { text-align: left; }
 .bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
 	position: absolute;
@@ -105,3 +104,4 @@ HTML {_background: url(/images/trans.gif) no-repeat fixed;}
 	top: 0;
 	left: 0;
 }
+/*slider-end*/
