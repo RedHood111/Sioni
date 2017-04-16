@@ -1,0 +1,95 @@
+@media (min-width: 993px) and (max-width: 1200px) {
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_contacts > p {
+    text-align: center;      
+}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_contacts > p {
+    text-align: center;      
+}
+}
+
+
+@media (min-width: 550px) and (max-width: 768px) {
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_contacts > p {    
+    text-align: center;      
+}
+}
+
+@media (max-width: 549px) {
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_contacts > p {    
+    text-align: center;      
+}
+
+.dogovor {     
+    margin-left: 240px;    
+    font-size: 14px;
+    color: #27B549;
+}
+
+.header_info p {    
+    font-size: 16px;    
+}
+
+.footer_load > p {
+    text-align: center;
+    margin-top: 20px;
+}
+}
