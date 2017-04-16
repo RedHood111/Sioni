@@ -1,69 +1,84 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-<title>Sioni</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Sioni my</title>      
+    <link rel="stylesheet" href="css/font-awesome.css">     
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/fisStyle.css">
+    <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/bgstretcher.js"></script>  
 
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" href="css/font-awesome.min.css">
-
-
-<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
-<script type="text/javascript" src="js/swfobject.js"></script>
-<script type="text/javascript" src="js/bgstretcher.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-	
-        //  Initialize Backgound Stretcher	   
-		$('BODY').bgStretcher({
-			images: ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg'],
-			imageWidth: 1024, 
-			imageHeight: 768, 
-			slideDirection: 'N',
-			slideShowSpeed: 1000,
-			transitionEffect: 'fade',
-			sequenceMode: 'normal',
-			buttonPrev: '#prev',
-			buttonNext: '#next',
-			pagination: '#nav',
-			anchoring: 'left center',
-			anchoringImg: 'left center'
-		});
-		
-	});
+    <script type="text/javascript">
+  $(document).ready(function(){
+  
+        //  Initialize Backgound Stretcher     
+    $('BODY').bgStretcher({
+      images: ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg'],
+      imageWidth: 1024, 
+      imageHeight: 768, 
+      slideDirection: 'N',
+      slideShowSpeed: 1000,
+      transitionEffect: 'fade',
+      sequenceMode: 'normal',
+      buttonPrev: '#prev',
+      buttonNext: '#next',
+      pagination: '#nav',
+      anchoring: 'left center',
+      anchoringImg: 'left center'
+    });
+    
+  });
 </script>
-
-
-</head>
-<body>
-
-
-    <div class="page" style="display: none_;">
-		</div>	
-<div class="container">
-	<div class="left">
-		<nav class="menuVertical">
-			<ul>
-				<li><a href="index.html"><img src="images/Sioni.png" alt="logo"></a></li>
-				<li><a href="o_nas.html">о нас</a></li>
-				<li><a href="#m3">услуги</a></li>
-				<li><a href="#m4">этапы</a></li>
-				<li><a href="#m5">климат</a></li>
-				<li><a href="#m6">контакты</a></li>
-				
-			</ul>
-		</nav><!--menuVertical-->
-		
-	</div><!--left-->
-	<div class="right">
-	<div class="phone">
-			<i class="fa fa-phone-square fa-4x" aria-hidden="true"></i>
-		</div>
-		<h3>О компании</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste nemo eos, sed repudiandae, nobis repellendus, perferendis quos hic aliquam voluptatem culpa sint excepturi voluptas? Pariatur adipisci laborum, ratione perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nostrum quam nisi atque saepe reprehenderit, vero ut quibusdam iure quisquam laborum qui voluptates laudantium praesentium enim maiores libero tenetur aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quasi, blanditiis perspiciatis asperiores corporis optio neque esse dolores harum sunt. Dolore dicta culpa dolor similique sint. Illum unde iusto quae.</p>
-	</div><!--right-->
-</div><!--container-->
-</body>
+  </head>
+  <body>  
+  
+    
+    <div class="bg">
+      <img src="images/Sioni.png" alt="logo">
+      <div class="contacts">
+        <p><b>Контакты</b><br>Адрес: г.Киев<br>ул. Хмельницкого 12<br>Тел. 096-4863-348</p>
+      </div>
+    </div>
+    
+      <div class="tabbed">
+        <input type="radio" name="tabs" id="tab-nav-1" checked>
+        <label for="tab-nav-1">О НАС</label>
+        <input type="radio" name="tabs" id="tab-nav-2">
+        <label for="tab-nav-2">УСЛУГИ</label>
+        <input type="radio" name="tabs" id="tab-nav-3">
+        <label for="tab-nav-3">ЭТАПЫ</label>
+        <input type="radio" name="tabs" id="tab-nav-4">
+        <label for="tab-nav-4">КЛИМАТ</label>
+        <input type="radio" name="tabs" id="tab-nav-5">
+        <label for="tab-nav-5">КОНТАКТЫ</label>           
+          <div class="tabs">
+            <div>
+              <div class="tabs_1"> 
+                <div class="iphone">
+                  <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
+                  <h3>О КОМПАНИИ</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste nemo eos, sed repudiandae, nobis repellendus, perferendis quos hic aliquam voluptatem culpa sint excepturi voluptas? Pariatur adipisci laborum, ratione perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nostrum quam nisi atque saepe reprehenderit, vero ut quibusdam iure quisquam laborum qui voluptates laudantium praesentium enim maiores libero tenetur aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quasi, blanditiis perspiciatis asperiores corporis optio neque esse dolores harum sunt. Dolore dicta culpa dolor similique sint. Illum unde iusto quae.</p>
+              </div>
+            </div>
+            <div><h3>УСЛУГИ</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate animi doloribus hic esse pariatur, veniam odit eveniet id aperiam. Doloremque tempore in ipsam itaque aliquid placeat voluptatem, iure sint, qui numquam modi dolorem officia est omnis cumque eos saepe fugiat veritatis unde repellat. Excepturi veniam, officiis at ipsa rerum odio? Odit sint dicta animi, alias ex quidem impedit cum, consequatur sapiente minus soluta maiores. Similique accusantium blanditiis praesentium, cumque veniam placeat. Soluta nobis libero omnis vero vel sunt molestiae.</p>
+            </div>
+            <div><h3>ЭТАПЫ</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores impedit ab, praesentium quod autem quos dolores vitae, facere commodi voluptas neque vero in iste vel placeat animi necessitatibus delectus. Sed, corporis, rem. Quisquam qui officiis ut eius ipsam vel eligendi, natus nulla repellat perferendis a ducimus doloremque facilis voluptas maiores ratione repellendus illum reprehenderit labore earum eum, modi inventore veritatis dolore. Quibusdam inventore ipsa beatae cum repellat, aliquam ut voluptas magni ea culpa expedita modi iste, ullam aperiam. Voluptate!</p>
+            </div>
+            <div><h3>КЛИМАТ</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus alias tenetur blanditiis aperiam eum aliquid minima, voluptatum, quaerat! Autem nihil, possimus est impedit officia deserunt dolor sit tempora, beatae itaque nisi, dolore nulla rerum natus harum unde voluptates nesciunt recusandae voluptatem et doloremque at ad? Ipsa maiores, veritatis quo similique qui consequatur a tenetur unde sed iure repudiandae voluptate autem cum, praesentium architecto, ut harum? Veritatis voluptates nihil reiciendis voluptate quod quam veniam ratione quibusdam harum quas? Quos neque, nihil.</p>
+            </div>
+            <div><h3>КОНТАКТЫ</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem facilis mollitia sed, inventore commodi beatae, nesciunt dicta quisquam ipsa perferendis, placeat voluptas facere at libero eius! Rerum alias repellat porro excepturi eum, repudiandae asperiores, quos fugiat praesentium, modi atque in sed nesciunt vel quis magnam tempora ipsum culpa et similique sapiente! Sed ullam similique veniam a! Et asperiores ad quasi culpa ducimus maxime omnis. Dolorum expedita consectetur harum sed impedit, debitis maiores consequuntur, voluptatem blanditiis, reiciendis assumenda aliquid odio!</p>
+            </div>     
+          </div>      
+      </div> 
+     
+       
+  </body>
 </html>
