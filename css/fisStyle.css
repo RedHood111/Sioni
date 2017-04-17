@@ -27,7 +27,7 @@ body {
 
 .tabbed {	
 	margin-top: 120px; 
-	perspective: 600px;		
+	perspective: 900px;		
 }
 
 .tabbed > input {
@@ -70,12 +70,13 @@ body {
 	color: #000000;
 }
 
-.tabs_1 {
+.tabs_1, .tabs_2, .tabs_3, .tabs_4, .tabs_5{
 	background:rgba(229, 231, 231, 0.5);
 	padding: 50px;
 	max-width: 300px;
 	height: 98.5vh;
 }
+
 
 .iphone {
 	background:rgba(229, 231, 231, 0.5);
