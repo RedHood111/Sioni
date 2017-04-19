@@ -51,7 +51,7 @@ body {
 .tabbed > label:hover,
 .tabbed > input:checked + label {
 	background: #BDC5C1;
-	border-radius: 6px;
+	/*border-radius: 6px;*/
 	color: #272424;
 	padding: 12px 5px 12px 35px;
 }
@@ -103,3 +103,6 @@ body {
 }
 
 /**********FIS***********/
+
+
+
