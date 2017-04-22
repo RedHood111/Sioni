@@ -89,6 +89,10 @@ q{
 	font-weight: bold;
 	margin-bottom : 15px;
 }
+a{
+	text-decoration: none;
+	color: #515151;
+}
 
 .iphone {
 	background:rgba(229, 231, 231, 0.5);
