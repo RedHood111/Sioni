@@ -20,6 +20,9 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.bg img{
+	width: 100% !important;
+}
 
 .contacts {
 	color: #272424; 
@@ -80,7 +83,7 @@ body {
 }
 q{
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom : 15px;
 }
 
 .iphone {
