@@ -10,18 +10,15 @@ body {
 
 .bg {
 	position: absolute;
-	width: 230px;
+	width: 250px;
 	height: 98.5vh;			
 	background:rgba(229, 231, 231, 0.87); 
 	margin: 0;
-	padding: 10px 30px 10px 20px;
+	padding: 10px 30px 10px 0px;
 	top: -120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-.bg img{
-	width: 100% !important;
 }
 
 .sioni_logo_vs {
@@ -30,6 +27,7 @@ body {
 
 .contacts {
 	color: #272424; 
+	margin-left: 35px;
 }
 
 .tabbed {	
@@ -80,9 +78,12 @@ body {
 	background:rgba(229, 231, 231, 0.5);
 	padding: 40px 35px;
 	max-width: 50%;
-	height: 85vh;
+	max-height: 85vh;
 	overflow-y: auto;
 	padding-bottom: 10%;
+}
+
+
 }
 q{
 	font-weight: bold;
