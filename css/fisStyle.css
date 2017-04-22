@@ -80,7 +80,7 @@ body {
 	background:rgba(229, 231, 231, 0.5);
 	padding: 40px 35px;
 	max-width: 50%;
-	min-height: 85vh;
+	height: 85vh;
 	overflow-y: auto;
 	padding-bottom: 10%;
 }
