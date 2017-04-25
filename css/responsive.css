@@ -20,7 +20,7 @@
 }
 
 .tabs {
-    padding-top: 138px;
+    padding-top: 150px;
 }
 
 .tabs > div {
@@ -61,14 +61,106 @@
     margin-left: 10px;
 }
 
+.iphone {
+    display: none;
+}
+
 .sioni_logo_vs {
     display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     background:rgba(229, 231, 231, 1.0);
-    position: fixed;  
-    z-index: 1; 
-    width: 100%;  
+    position: fixed;   
+    width: 100%;
+    min-height: 100px;
+    z-index: 2;     
 }
+
+.sioni_menu_vs {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    background:rgba(229, 231, 231, 1.0); 
+    position: fixed;
+    z-index: 1;
+    padding-bottom: -10px;
+}
+
+.fa-phone-square {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    z-index: 5;
+}
+
+.fa-phone-square span {
+    font-size: 1.8rem;
+    margin-left: 7px; 
+}
+
+.sioni_menu_vs > .iphone {
+    display: block;
+}
+
+.sioni_logo_vs img {
+    max-width: 100%;
+    height: auto;
+    margin-left: -21px;
+}
+
+.menuToggle {
+    position: relative;
+    z-index: 4;
+    top: 148px;
+    left: 0px;
+    list-style: none;
+    width: 100%;
+    height: 50px;    
+    text-align: center;
+}
+
+.mtoggle {
+    text-align: center;
+    max-width: 50px;
+    position: relative;
+    top: 140px;
+    font-size: 26px;
+    float: right;
+    margin-right: 10px;   
+    color: #4e4545; 
+}
+
+.mtoggle:hover {
+    cursor: pointer;
+}
+
+.menuToggle {
+    display: none;
+    margin-top: 33px;
+}
+
+hr {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.menuToggle li {
+    background:rgba(229, 231, 231, 1.0);
+   
+}
+
+#menuCheck:checked + .menuToggle {
+    display: block;
+}
+
+.menuToggle a {
+    display: block;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+
 
 #logo_vs {
     padding: 20px;
