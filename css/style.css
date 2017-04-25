@@ -8,7 +8,7 @@ div{position:relative;}
 p:first-letter{
 	font-weight:bold;
 	color:#000;
-	/*text-shadow: white 1px 0px, white 1px 1px, white 0px 1px, white -1px 1px, white -1px 0px, white -1px -1px, white 0px -1px, white 1px -1px;   обводка текста*/
+	
 }
 .container{
 	padding:0px 0px 0px 220px;
