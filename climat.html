@@ -4,29 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Sioni</title>      
+    <title>Sioni my</title>      
     <link rel="stylesheet" href="css/font-awesome.css">     
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/fisStyleC.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
-    <script type="text/javascript" src="js/bgstretcher.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>  
-  
-
-    
+    <script type="text/javascript" src="js/bgstretcher.js"></script>  
 
     <script type="text/javascript">
   $(document).ready(function(){
   
         //  Initialize Backgound Stretcher     
     $('BODY').bgStretcher({
-      images: ['images/climat/1.jpg', 'images/climat/2.jpg', 'images/climat/3.jpeg', 'images/climat/4.jpg', 'images/climat/5.jpg', 'images/climat/6.jpg'],
+      images: ['images/climat/1.jpg', 'images/climat/2.jpg', 'images/climat/3.jpeg', 'images/climat/4_1.jpg', 'images/climat/4.jpg', 'images/climat/8.jpg'],
       imageWidth: 1024, 
       imageHeight: 768, 
       slideDirection: 'N',
-      slideShowSpeed: 2000,
+      slideShowSpeed: 1000,
       transitionEffect: 'fade',
       sequenceMode: 'normal',
       buttonPrev: '#prev',
@@ -38,28 +34,28 @@
     
   });
 </script>
-
-<script type="text/javascript">
- $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-</script>
-
-
   </head>
   <body>  
   
     <div class="sioni_logo_vs">
-                <img src="images/Sioni.svg" alt="logo" id="logo_vs">                
+                <a href="index.html"><img src="images/Sioni.png" alt="logo" id="logo_vs"></a> 
+                <a href="climat.html"><img src="images/Sioni-c.png" alt="logo-c" id="logo_vs"></a>               
+    </div>
+    <div class="sioni_menu_vs">
+             
+            <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"><span>ТЕЛЕФОН</span></i></a>
+            <div class="mtoggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>           
+            <ul class="menuToggle">
+              <li><a href="#">ГЛАВНАЯ</a><hr></li>
+              <li><a href="#">О НАС</a><hr></li>
+              <li><a href="#">УСЛУГИ</a><hr></li>
+              <li><a href="climat.html">КЛИМАТ</a><hr></li>
+              <li><a href="#">СТРОИТЕЛЬСТВО</a></li>
+            </ul>               
     </div>
     <div class="bg">
     <div class="logo-cont">
-      <img src="images/Sioni-c.svg" alt="logo" id="logo-c">
+      <img src="images/Sioni-c.png" alt="logo" id="logo">
     </div>   
       <div class="contacts">
 
@@ -75,10 +71,9 @@
         <input type="radio" name="tabs" id="tab-nav-3">
         <label for="tab-nav-3">УСЛУГИ</label>
         <input type="radio" name="tabs" id="tab-nav-4">
-        <label for="tab-nav-4"><a href="climat.html">КЛИМАТ</a>
-        </label>
-        <input type="radio" name="tabs" id="tab-nav-5">
-        <label for="tab-nav-5">СТРОИТЕЛЬСТВО</label>   
+        <label for="tab-nav-4">СТРОИТЕЛЬСТВО</label>
+       <!--  <input type="radio" name="tabs" id="tab-nav-5">
+        <label for="tab-nav-5">СТРОИТЕЛЬСТВО</label>   --> 
           
           <div class="tabs">
            
@@ -145,56 +140,19 @@
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>УСЛУГИ<hr></h3>
-               <div id="slideshow"> 
-     <div id="slideshowWindow"> 
-      <div class="slide"> 
-               <img src="images/slide-1.jpg" /> 
-                 <div class="slideText"> 
-                     <h2 class="slideTitle">Документы</h2> 
-                     <p class="slideDes"> Консультируем, помогаем в оформлении документов.  </p> 
-                      
-                 </div><!--/slideText--> 
-            </div><!--/slide--> 
-        <div class="slide"> 
-           <img src="images/slide-2.jpg" /> 
-  <div class="slideText"> 
-                     <h2 class="slideTitle">Проектирование</h2> 
-                     <p class="slideDes">Поможем с планированием, составлением проекта для реализации вашей мечты.</p> 
-                      
-                 </div><!--/slideText--> 
-        </div><!--/slide--> 
-        <div class="slide"> 
-           <img src="images/slide-3.jpg" /> 
-  <div class="slideText"> 
-                     <h2 class="slideTitle">Интерьер</h2> 
-                     <p class="slideDes">Подскажем интерьерный стиль, учитвая ваши пожелания и новшества интерного дизайна.</p> 
-                     
-                 </div><!--/slideText--> 
-        </div><!--/slide--> 
-     </div><!--/slideshowWindow--> 
-</div><!--/slideshow--> 
- 
-
-
-
-
-
-
-
-
-               </div>
+                  <p>СЛАЙДЕР</p>
+              </div>
             </div>
- 
-            <div>
+            <!-- <div>
               <div class="tabs_4"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>КЛИМАТ<hr></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste nemo eos, sed repudiandae, nobis repellendus, perferendis quos hic aliquam voluptatem culpa sint excepturi voluptas? Pariatur adipisci laborum, ratione perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nostrum quam nisi atque saepe reprehenderit, vero ut quibusdam iure quisquam laborum qui voluptates laudantium praesentium enim maiores libero tenetur aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quasi, blanditiis perspiciatis asperiores corporis optio neque esse dolores harum sunt. Dolore dicta culpa dolor similique sint. Illum unde iusto quae.</p>
               </div>
-            </div>
+            </div> -->
             <div>
-              <div class="tabs_5"> 
+              <div class="tabs_4"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>СТРОИТЕЛЬСТВО<hr></h3>
@@ -211,13 +169,10 @@
 
               </div>
             </div>
-          </div> 
-
-      </div>
-      <div class="logo-cont"> 
-             <a href="index.html"><img src="images/Sioni.svg" alt="logo" id="logo"> </a>
-          </div> 
-     <script type="text/javascript" src="js/index.js"></script>
+          </div>  
+             <a href="index.html"><img src="images/Sioni.png" alt="logo-c" id="logo"> </a>
+      </div> 
+     
        
   </body>
 </html>

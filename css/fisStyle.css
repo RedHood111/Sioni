@@ -20,29 +20,29 @@ body {
 	height: 100vh;			
 	background:rgba(229, 231, 231, 0.87); 
 	margin: 0;
-	padding: 10px 30px 0px 0px;
+	padding: 0px 30px 0px 0px;
 	top: -120px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.logo-cont img{
-	width: 72%;
-
-}
-#logo-c{
-	width: 16%;
-}
-
 
 .sioni_logo_vs {
 	display: none;
+
+}
+
+.sioni_menu_vs {
+	display: none;
+}
+
+#menuCheck:checked + .menu {
+	display: block;
 }
 
 .contacts {
 	color: #272424; 
 	margin-left: 35px;
-	margin-bottom: 20px;
 }
 
 .tabbed {	
@@ -89,15 +89,12 @@ body {
 }
 
 .tabs_1, .tabs_2, .tabs_3, .tabs_4, .tabs_5 {
-	background:rgba(229, 231, 231, 0.67);
+	background:rgba(229, 231, 231, 0.5);
 	padding: 0px 35px;
 	max-width: 50%;
 	height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;	
-	font-size: 18px;
-	line-height: 1.5;
-	text-shadow: 0px 0px 1px #303030;
 }
 
 

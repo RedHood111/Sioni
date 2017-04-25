@@ -4,28 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Sioni</title>      
+    <title>Sioni my</title>      
     <link rel="stylesheet" href="css/font-awesome.css">     
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
     <link rel="stylesheet" type="text/css" href="css/fisStyle.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
-    <script type="text/javascript" src="js/bgstretcher.js"></script> 
-    <script type="text/javascript" src="js/index.js"></script>  
-
+    <script type="text/javascript" src="js/bgstretcher.js"></script>  
     
-
     <script type="text/javascript">
   $(document).ready(function(){
   
         //  Initialize Backgound Stretcher     
     $('BODY').bgStretcher({
-      images: ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpg', 'images/4.jpeg', 'images/5.jpeg', 'images/6.jpg'],
+      images: ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg'],
       imageWidth: 1024, 
       imageHeight: 768, 
       slideDirection: 'N',
-      slideShowSpeed: 2000,
+      slideShowSpeed: 1000,
       transitionEffect: 'fade',
       sequenceMode: 'normal',
       buttonPrev: '#prev',
@@ -37,7 +34,6 @@
     
   });
 </script>
-
 <script type="text/javascript">
  $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
@@ -48,23 +44,33 @@
     });
 });
 </script>
-
-
-
   </head>
   <body>  
   
     <div class="sioni_logo_vs">
-                <img src="images/Sioni.png" alt="logo" id="logo_vs">                
+                <a href="index.html"><img src="images/Sioni.png" alt="logo" id="logo_vs"></a> 
+                <a href="climat.html"><img src="images/Sioni-c.png" alt="logo-c" id="logo_vs"></a>               
+    </div>
+    <div class="sioni_menu_vs">
+             
+            <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"><span>ТЕЛЕФОН</span></i></a>
+            <label class="mtoggle" for="menuCheck"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+            <input id="menuCheck" type="checkbox">           
+            <ul class="menuToggle">
+              <li><a href="#main_page">ГЛАВНАЯ</a><hr></li>
+              <li><a href="#about_us">О НАС</a><hr></li>
+              <li><a href="#services">УСЛУГИ</a><hr></li>
+              <li><a href="climat.html">КЛИМАТ</a><hr></li>
+              <li><a href="#builder">СТРОИТЕЛЬСТВО</a></li>
+            </ul>               
     </div>
     <div class="bg">
     <div class="logo-cont">
-      <img src="images/Sioni.svg" alt="logo" id="logo">
+      <img src="images/Sioni.png" alt="logo" id="logo">
     </div>   
       <div class="contacts">
 
-        <p><b>Контакты</b><br>Адрес: г.Днепр<br>ул. Князя Ярослава Мудрого, 68 оф.219<br>Тел. +38 067 611 11 35 <br>sioni.climate@gmail.com</p>
-
+        <p><b>Контакты</b><br>Адрес: г.Днепр<br>ул. Хмельницкого 12<br>Тел. 096-4863-348</p>
       </div>
     </div>
     
@@ -76,15 +82,14 @@
         <input type="radio" name="tabs" id="tab-nav-3">
         <label for="tab-nav-3">УСЛУГИ</label>
         <input type="radio" name="tabs" id="tab-nav-4">
-        <label for="tab-nav-4"><a href="climat.html">КЛИМАТ</a>
-        </label>
+        <label for="tab-nav-4"><a href="climat.html">КЛИМАТ</a></label>
         <input type="radio" name="tabs" id="tab-nav-5">
         <label for="tab-nav-5">СТРОИТЕЛЬСТВО</label>   
           
-          <div class="tabs">
+          <div class="tabs" id="main_page">
            
-            <div>
-              <div class="tabs_1"> 
+            <div >
+              <div class="tabs_1 "> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>              
                   </div>              
@@ -95,7 +100,7 @@
 
 <p>Среди заказов компании <b>«Sioni С»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью. (здесь должна быть ссылка на фотографии законченных объектов)</p><br>
 
-<p>Наши сотрудники являются отличными профессионалами каждый в своей области, работают только с высококачественными материалами, с соблюдением всех строительных норм и правил. И потому мы гарантируем выполнение заказа в срок и соблюдение всех пунктов договора с заказчиком. Также предоставляем обязательное гарантийное обслуживание законченных объектов.</p><br>
+<p>Наши сотрудники являются отличными профессионалами каждый в своей области, работают только с высококачественными материалами, с соблюдением всех строительных норм и правил. И потому мы гарантируем выполнение заказа в срок и соблюдение всех пунктов договора с заказчиком. Также предоставляем обязательное гарантийное обслуживание законченных объектов.</p><br id="about_us">
 
 <p>Если Вы обратитесь в строительную компанию <b>«Sioni С»</b>, то будете уверены в том, что при создании проекта любого строительного объекта мы учтём все Ваши пожелания, примем наиболее оптимальное для Вас решение а стоимость работ будет зависеть от сложности поставленных задач.</p><br>
 
@@ -103,7 +108,7 @@
               </div>
             </div>
             <div>
-              <div class="tabs_2"> 
+              <div class="tabs_2" > 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>О НАС<hr></h3>
@@ -128,7 +133,7 @@
   <li>Комплектацию материалами и инженерным оборудованием;</li>
   <li>Сервисное обслуживание.</li>
 </ul>
-<br>
+<br >
 Наши преимущества:
 Опыт работы более 12 лет
 Полный спектр работ от идеи до покупки мебели
@@ -141,52 +146,13 @@
 </p>
               </div>
             </div>
-            <div>
+            <div id="services">
               <div class="tabs_3"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>УСЛУГИ<hr></h3>
-
-
-
-<div id="slideshow"> 
-     <div id="slideshowWindow"> 
-    	<div class="slide"> 
-        	     <img src="images/slide-1.jpg" /> 
-                 <div class="slideText"> 
-                     <h2 class="slideTitle">Документы</h2> 
-                     <p class="slideDes"> Консультируем, помогаем в оформлении документов.  </p> 
-                      
-                 </div><!--/slideText--> 
-            </div><!--/slide--> 
-        <div class="slide"> 
-        	 <img src="images/slide-2.jpg" /> 
-	<div class="slideText"> 
-                     <h2 class="slideTitle">Проектирование</h2> 
-                     <p class="slideDes">Поможем с планированием, составлением проекта для реализации вашей мечты.</p> 
-                      
-                 </div><!--/slideText--> 
-        </div><!--/slide--> 
-        <div class="slide"> 
-        	 <img src="images/slide-3.jpg" /> 
-	<div class="slideText"> 
-                     <h2 class="slideTitle">Интерьер</h2> 
-                     <p class="slideDes">Подскажем интерьерный стиль, учитвая ваши пожелания и новшества интерного дизайна.</p> 
-                     
-                 </div><!--/slideText--> 
-        </div><!--/slide--> 
-     </div><!--/slideshowWindow--> 
-</div><!--/slideshow--> 
- 
-
-
-
-
-
-
-
-
-               </div>
+                  <p>СЛАЙДЕР</p>
+              </div>
             </div>
             <div>
               <div class="tabs_4"> 
@@ -196,7 +162,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste nemo eos, sed repudiandae, nobis repellendus, perferendis quos hic aliquam voluptatem culpa sint excepturi voluptas? Pariatur adipisci laborum, ratione perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nostrum quam nisi atque saepe reprehenderit, vero ut quibusdam iure quisquam laborum qui voluptates laudantium praesentium enim maiores libero tenetur aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quasi, blanditiis perspiciatis asperiores corporis optio neque esse dolores harum sunt. Dolore dicta culpa dolor similique sint. Illum unde iusto quae.</p>
               </div>
             </div>
-            <div>
+            <div id="builder">
               <div class="tabs_5"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
@@ -214,13 +180,10 @@
 
               </div>
             </div>
-          </div> 
-
-      </div>
-      <div class="logo-cont"> 
-             <a href="climat.html"><img src="images/Sioni-c.svg" alt="logo-c" id="logo-c"> </a>
-          </div> 
-     <script type="text/javascript" src="js/index.js"></script>
-       
+          </div>  
+             <a href="climat.html"><img src="images/Sioni-c.png" alt="logo-c" id="logo-c"> </a>
+      </div> 
+     
+   <script type="text/javascript" src='js/script.js'></script>    
   </body>
 </html>
