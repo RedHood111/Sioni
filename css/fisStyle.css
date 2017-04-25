@@ -20,7 +20,7 @@ body {
 	height: 100vh;			
 	background:rgba(229, 231, 231, 0.87); 
 	margin: 0;
-	padding: 0px 30px 0px 0px;
+	padding: 10px 30px 0px 0px;
 	top: -120px;
 	display: flex;
 	flex-direction: column;
@@ -43,6 +43,7 @@ body {
 .contacts {
 	color: #272424; 
 	margin-left: 35px;
+	margin-bottom: 10px;
 }
 
 .tabbed {	
@@ -62,7 +63,8 @@ body {
 	cursor: pointer;
 	transition: all .3s;
 	color:#515151;
-	font-size:23px;
+	font-size:26px;
+	font-weight: bold;
 }
 
 
@@ -79,7 +81,7 @@ body {
 	height: 100%;	
 	position: absolute;
 	left: 280px;
-	top: -405px;	
+	top: -425px;	
 	line-height: 1.4em;
 	opacity: 0;	
 	transform: rotateY(20deg);
@@ -89,12 +91,19 @@ body {
 }
 
 .tabs_1, .tabs_2, .tabs_3, .tabs_4, .tabs_5 {
-	background:rgba(229, 231, 231, 0.5);
+	background:rgba(229, 231, 231, 0.74);
 	padding: 0px 35px;
 	max-width: 50%;
 	height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;	
+	font-size: 20px;
+	line-height: 1.5;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1); 
+
+	-webkit-box-shadow: inset 3px 0px 3px 0px rgba(127, 103, 100, 1);
+-moz-box-shadow:    inset 3px 0px 3px 0px rgba(127, 103, 100, 1);
+box-shadow:         inset 3px 0px 3px 0px rgba(127, 103, 100, 1);
 }
 
 

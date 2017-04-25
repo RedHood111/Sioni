@@ -12,17 +12,17 @@
     <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
     <script type="text/javascript" src="js/bgstretcher.js"></script>  
-
+    
     <script type="text/javascript">
   $(document).ready(function(){
   
         //  Initialize Backgound Stretcher     
     $('BODY').bgStretcher({
-      images: ['images/climat/1.jpg', 'images/climat/2.jpg', 'images/climat/3.jpeg', 'images/climat/4_1.jpg', 'images/climat/4.jpg', 'images/climat/8.jpg'],
+      images: ['images/climat/2.jpg', 'images/climat/3.jpeg', 'images/climat/4.jpg', 'images/climat/4_1.jpg', 'images/climat/5.jpg', 'images/climat/9.jpg'],
       imageWidth: 1024, 
       imageHeight: 768, 
       slideDirection: 'N',
-      slideShowSpeed: 1000,
+      slideShowSpeed: 2000,
       transitionEffect: 'fade',
       sequenceMode: 'normal',
       buttonPrev: '#prev',
@@ -34,32 +34,52 @@
     
   });
 </script>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
   </head>
   <body>  
   
     <div class="sioni_logo_vs">
                 <a href="index.html"><img src="images/Sioni.png" alt="logo" id="logo_vs"></a> 
-                <a href="climat.html"><img src="images/Sioni-c.png" alt="logo-c" id="logo_vs"></a>               
+                <!-- <a href="climat.html"><img src="images/Sioni-c.png" alt="logo-c" id="logo_vs"></a>    -->            
     </div>
     <div class="sioni_menu_vs">
              
             <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"><span>ТЕЛЕФОН</span></i></a>
-            <div class="mtoggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>           
+            <label class="mtoggle" for="menuCheck"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+            <input id="menuCheck" type="checkbox">           
             <ul class="menuToggle">
-              <li><a href="#">ГЛАВНАЯ</a><hr></li>
-              <li><a href="#">О НАС</a><hr></li>
-              <li><a href="#">УСЛУГИ</a><hr></li>
+              <li><a href="#main_page">ГЛАВНАЯ</a><hr></li>
+              <li><a href="#about_us">О НАС</a><hr></li>
+              <li><a href="#services">УСЛУГИ</a><hr></li>
               <li><a href="climat.html">КЛИМАТ</a><hr></li>
-              <li><a href="#">СТРОИТЕЛЬСТВО</a></li>
+              <li><a href="#builder">СТРОИТЕЛЬСТВО</a></li>
             </ul>               
     </div>
     <div class="bg">
     <div class="logo-cont">
-      <img src="images/Sioni-c.png" alt="logo" id="logo">
+      <img src="images/Sioni.png" alt="logo" id="logo">
     </div>   
       <div class="contacts">
 
-        <p><b>Контакты</b><br>Адрес: г.Днепр<br>ул. Хмельницкого 12<br>Тел. 096-4863-348</p>
+        <p><b>Контакты</b><br>
+        Адрес: г.Днепр<br>
+        ул. Князя Ярослава Мудрого, 68 оф.219<br>
+        Тел. +38 067 611 11 35  <br>
+        sioni.climate@gmail.com</p>
+
+
+ 
+
+        
       </div>
     </div>
     
@@ -67,43 +87,26 @@
         <input type="radio" name="tabs" id="tab-nav-1" checked>
         <label for="tab-nav-1">ГЛАВНАЯ</label>
         <input type="radio" name="tabs" id="tab-nav-2" checked>
-        <label for="tab-nav-2">О НАС</label>
+        <label for="tab-nav-2">НАШИ РАБОТЫ</label>
         <input type="radio" name="tabs" id="tab-nav-3">
         <label for="tab-nav-3">УСЛУГИ</label>
         <input type="radio" name="tabs" id="tab-nav-4">
-        <label for="tab-nav-4">СТРОИТЕЛЬСТВО</label>
-       <!--  <input type="radio" name="tabs" id="tab-nav-5">
-        <label for="tab-nav-5">СТРОИТЕЛЬСТВО</label>   --> 
+        <label for="tab-nav-4">КЛИМАТ</label>
+        <input type="radio" name="tabs" id="tab-nav-5">
+        <label for="tab-nav-5"><a href="index.html">СТРОИТЕЛЬСТВО</a></label>   
           
-          <div class="tabs">
+          <div class="tabs" id="main_page">
            
-            <div>
-              <div class="tabs_1"> 
+            <div >
+              <div class="tabs_1 "> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>              
                   </div>              
                   <h3>ГЛАВНАЯ<hr></h3>
-                  <p>Приветствуем Вас на сайте строительной компании <strong>«Sioni С»</strong>. Наша компания работает на рынке Украины с 2005 года, главный офис находится в городе Днепр. За время работы компании мы заслужили высокий уровень доверия со стороны наших заказчиков и партнёров.</p><br>
 
-<p>Сплочённая команда нашей компании успешно реализовывает различные строительные заказы. Мы поможем Вам построить дом, начиная с идеи и создания чертежей будущего дома, заканчивая полной внутренней отделкой и сдачей объекта «под ключ». Или выполнить высококачественный ремонт Вашей квартиры.</p><br>
+<p>Приветствуем Вас на сайте строительной компании <strong>«Sioni»</strong>.</p><br>
 
-<p>Среди заказов компании <b>«Sioni С»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью. (здесь должна быть ссылка на фотографии законченных объектов)</p><br>
-
-<p>Наши сотрудники являются отличными профессионалами каждый в своей области, работают только с высококачественными материалами, с соблюдением всех строительных норм и правил. И потому мы гарантируем выполнение заказа в срок и соблюдение всех пунктов договора с заказчиком. Также предоставляем обязательное гарантийное обслуживание законченных объектов.</p><br>
-
-<p>Если Вы обратитесь в строительную компанию <b>«Sioni С»</b>, то будете уверены в том, что при создании проекта любого строительного объекта мы учтём все Ваши пожелания, примем наиболее оптимальное для Вас решение а стоимость работ будет зависеть от сложности поставленных задач.</p><br>
-
-Компания <b>«Sioni С»</b> - это опыт, качество и гарантия надежности!</p>
-              </div>
-            </div>
-            <div>
-              <div class="tabs_2"> 
-                <div class="iphone">
-                  <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
-                  <h3>О НАС<hr></h3>
-                  <p>
-
-Компания <strong>«Sioni»</strong> выполняет полный спектр работ по проектированию, строительству и монтажу строительных объектов и их инженерной инфраструктуры «под ключ» — от обследования площадки под строительство, предпроектной подготовки, сбора разрешительной документации и технических условий до получения Акта ввода в эксплуатацию и сервисного обслуживания.<br>
+<p>Компания <strong>«Sioni»</strong> выполняет полный спектр работ по проектированию, строительству и монтажу строительных объектов и их инженерной инфраструктуры «под ключ» — от обследования площадки под строительство, предпроектной подготовки, сбора разрешительной документации и технических условий до получения Акта ввода в эксплуатацию и сервисного обслуживания.</p><br>
 <br>
 <b>Основа нашей стратегии</b> —
 <ul>
@@ -122,57 +125,86 @@
   <li>Комплектацию материалами и инженерным оборудованием;</li>
   <li>Сервисное обслуживание.</li>
 </ul>
-<br>
-Наши преимущества:
+<br >
+<p>Наши преимущества:
 Опыт работы более 12 лет
 Полный спектр работ от идеи до покупки мебели
 Гарантия на все виды работ
 Сервисная поддержка
+</p> <br>
+Компания <b>«Sioni»</b> - это опыт, качество и гарантия надежности!</p><br><br>
 
-Выполненные объекты:
-
-....( маленькие фото из интернета, внизу название  ЖК Башни )
-</p>
+                  
               </div>
             </div>
             <div>
+              <div class="tabs_2" > 
+                <div class="iphone">
+                  <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
+                  <h3>НАШИ РАБОТЫ<hr></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</p>
+              </div>
+            </div>
+            <div id="services">
               <div class="tabs_3"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>УСЛУГИ<hr></h3>
-                  <p>СЛАЙДЕР</p>
+                  <p>СЛАЙДЕР <br>
+                  <b>Наша компания предоставляет следующие виды услуг</b>:
+<ul>  
+  <li>Подготовку разрешительной документации, получение технических условий и согласований;</li>
+  <li>Проектирование и прохождение экспертиз;</li>
+  <li>Разработка архитектурно-дизайнерских решений;</li>
+  <li>Строительство гражданских зданий и сооружений;</li>
+  <li>Монтаж кондиционирования, вентиляции, отопления;</li>
+  <li>Пуско-наладочные работы;</li>
+  <li>Комплектацию материалами и инженерным оборудованием;</li>
+  <li>Сервисное обслуживание.</li>
+</ul></p>
               </div>
             </div>
-            <!-- <div>
+            <div>
               <div class="tabs_4"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>КЛИМАТ<hr></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum iste nemo eos, sed repudiandae, nobis repellendus, perferendis quos hic aliquam voluptatem culpa sint excepturi voluptas? Pariatur adipisci laborum, ratione perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nostrum quam nisi atque saepe reprehenderit, vero ut quibusdam iure quisquam laborum qui voluptates laudantium praesentium enim maiores libero tenetur aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quasi, blanditiis perspiciatis asperiores corporis optio neque esse dolores harum sunt. Dolore dicta culpa dolor similique sint. Illum unde iusto quae.</p>
               </div>
-            </div> -->
-            <div>
-              <div class="tabs_4"> 
+            </div>
+            <div id="builder">
+              <div class="tabs_5"> 
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <h3>СТРОИТЕЛЬСТВО<hr></h3>
-                  <q><em>Компания «Sioni» - это опыт, качество и гарантия надежности!</em></q> 
-                  <p>Компания <b>«Sioni»</b>. работает на рынке Украины с 2005 года, главный офис находится в городе Днепр. За время работы компании мы заслужили высокий уровень доверия со стороны наших заказчиков и партнёров. </p>
-<p>Сплочённая команда нашей компании успешно реализовывает различные строительные заказы. Мы поможем Вам построить дом, начиная с идеи и создания чертежей будущего дома, заканчивая полной внутренней отделкой и сдачей объекта «под ключ». Или выполнить высококачественный ремонт Вашей квартиры. </p>
-<p>Среди заказов компании <b>«Sioni»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью. (здесь должна быть ссылка на фотографии законченных объектов)</p>
-<p>Наши сотрудники являются отличными профессионалами каждый в своей области, работают только с высококачественными материалами, с соблюдением всех строительных норм и правил. И потому мы гарантируем выполнение заказа в срок и соблюдение всех пунктов договора с заказчиком. Также предоставляем обязательное гарантийное обслуживание законченных объектов. </p>
-<p>Если Вы обратитесь в строительную компанию <b>«Sioni»</b>, то будете уверены в том, что при создании проекта любого строительного объекта мы учтём все Ваши пожелания, примем наиболее оптимальное для Вас решение а стоимость работ будет зависеть от сложности поставленных задач. 
+                  <q><em>Компания «Sioni» - это опыт, качество и гарантия надежности!</em></q> <br>
 
+                  <p>Компания <b>«Sioni»</b> работает на рынке Украины с 2005 года, главный офис находится в городе Днепр. За время работы компании мы заслужили высокий уровень доверия со стороны наших заказчиков и партнёров.</p><br>
 
-</p>
+<p>Сплочённая команда нашей компании успешно реализовывает различные строительные заказы. Мы поможем Вам построить дом, начиная с идеи и создания чертежей будущего дома, заканчивая полной внутренней отделкой и сдачей объекта «под ключ». Или выполнить высококачественный ремонт Вашей квартиры.</p><br>
+
+<p>Среди заказов компании <b>«Sioni»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью. (здесь должна быть ссылка на фотографии законченных объектов)</p><br>
+
+<p>Наши сотрудники являются отличными профессионалами каждый в своей области, работают только с высококачественными материалами, с соблюдением всех строительных норм и правил. И потому мы гарантируем выполнение заказа в срок и соблюдение всех пунктов договора с заказчиком. Также предоставляем обязательное гарантийное обслуживание законченных объектов.</p><br id="about_us">
+
+<p>Если Вы обратитесь в строительную компанию <b>«Sioni»</b>, то будете уверены в том, что при создании проекта любого строительного объекта мы учтём все Ваши пожелания, примем наиболее оптимальное для Вас решение а стоимость работ будет зависеть от сложности поставленных задач.</p><br>
+
+Компания <b>«Sioni»</b> - это опыт, качество и гарантия надежности!</p><br><br>
 
 
               </div>
             </div>
           </div>  
-             <a href="index.html"><img src="images/Sioni.png" alt="logo-c" id="logo"> </a>
+             
       </div> 
      
-       
+   <script type="text/javascript" src='js/script.js'></script>    
   </body>
 </html>
