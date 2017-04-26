@@ -88,6 +88,7 @@ body {
 	transform-origin: left center;
 	transition: opacity .3s, transform .6s;	
 	color: #000000;
+
 }
 
 .tabs_1, .tabs_2, .tabs_3, .tabs_4, .tabs_5 {
@@ -101,9 +102,12 @@ body {
 	line-height: 1.5;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1); 
 
-	-webkit-box-shadow: inset 3px 0px 3px 0px rgba(127, 103, 100, 1);
--moz-box-shadow:    inset 3px 0px 3px 0px rgba(127, 103, 100, 1);
-box-shadow:         inset 3px 0px 3px 0px rgba(127, 103, 100, 1);
+	background: rgb(221, 221, 221); 
+background: -moz-linear-gradient(0deg, rgb(221, 221, 221) 45% 1, rgb(255, 255, 255) 62%); 
+background: -webkit-linear-gradient(0deg, rgb(221, 221, 221) 45%, rgb(255, 255, 255) 62%); 
+background: -o-linear-gradient(0deg, rgb(221, 221, 221) 45%, rgb(255, 255, 255) 62%); 
+background: -ms-linear-gradient(0deg, rgb(221, 221, 221) 45%, rgb(255, 255, 255) 62%); 
+background: linear-gradient(90deg, rgb(221, 221, 221) 45%, rgb(255, 255, 255) 62%);
 }
 
 
@@ -139,6 +143,14 @@ a {
 	transform: rotateY(0deg);
 	opacity: 1;	
 	z-index: 1;
+}
+
+.footer_vs {
+	display: none;
+}
+
+.mtoggle {
+	color: #4e4545;
 }
 
 /**********FIS***********/

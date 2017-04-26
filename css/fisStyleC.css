@@ -34,8 +34,6 @@
 .tabbed {	
 	margin-top: 120px; 
 	perspective: 900px;
-	top:20px;
-
 }
 
 .tabbed > input {
@@ -131,6 +129,14 @@ a{
 	transform: rotateY(0deg);
 	opacity: 1;	
 	z-index: 1;
+}
+
+.footer_vs {
+	display: none;
+}
+
+.mtoggle {
+	color: #2574a9;
 }
 
 /**********FIS***********/
