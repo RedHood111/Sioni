@@ -54,7 +54,9 @@
     padding-top: 60px;
     height: auto;
 }
-
+.text-box{
+    max-width: 100%;
+}
 
 
 .fa-phone-square {
