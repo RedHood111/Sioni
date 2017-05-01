@@ -1,53 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Sioni</title>      
-    <link rel="stylesheet" href="css/font-awesome.css">     
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link rel="stylesheet" type="text/css" href="css/fisStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
-    <script type="text/javascript" src="js/swfobject.js"></script>
-    <script type="text/javascript" src="js/bgstretcher.js"></script>  
-    
-    <script type="text/javascript">
-  $(document).ready(function(){
+    <title>Sioni</title> 
+    <link rel="stylesheet" href="css/font-awesome.css"> 
   
-        //  Initialize Backgound Stretcher     
-    $('BODY').bgStretcher({
-      images: ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpg', 'images/4.jpeg', 'images/5.jpeg', 'images/6.jpg'],
-      imageWidth: 1024, 
-      imageHeight: 768, 
-      slideDirection: 'N',
-      slideShowSpeed: 2000,
-      transitionEffect: 'fade',
-      sequenceMode: 'normal',
-      buttonPrev: '#prev',
-      buttonNext: '#next',
-      pagination: '#nav',
-      anchoring: 'left center',
-      anchoringImg: 'left center'
-    });
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
     
-  });
-</script>
-<script type="text/javascript">
- $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-</script>
+
+<!--     Slider blok -->
+ <link rel="stylesheet" type="text/css" href="css/sliderstyle.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noscript.css" /></noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/noscript.css" /><![endif]-->
+    
   </head>
-  <body>  
-  
-    <div class="sioni_logo_vs">
+  <body> 
+  <div id="carousels">
+        <div class="carousel demonstration"><img src="images/1.jpeg"></div>
+        <div class="carousel"><img src="images/2.jpeg"></div>        
+        <div class="carousel"><img src="images/4.jpeg"></div>
+        <div class="carousel"><img src="images/5.jpeg"></div>
+                
+      </div>
+<!-- Saide bar -->
+<div class="bar">
+<!-- LOGO -->
+
+
+ <div class="logo">
+  <img src="images/Sioni.png" alt="logo" >
+ </div> 
+  <!-- LOGO end-->
+<!-- MENU MOBILE-->
+  <div class="sioni_logo_vs">
             <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>
             <a href="index.html"><img src="images/Sioni.png" alt="logo" id="logo_vs"></a>        
             
@@ -61,28 +50,13 @@
               <li><a href="#builder">СТРОИТЕЛЬСТВО</a></li>
             </ul>               
     </div>
-    <div class="bg">
-    <div class="logo-cont">
-      <img src="images/Sioni.png" alt="logo" id="logo">
-    </div>   
-      <div class="contacts">
+<!-- MENU MOBILE end-->
+<!-- MENU-->
 
-        <p><b>Контакты</b><br>
-        Адрес: г.Днепр<br>
-        ул. Хмельницкого 12<br>
-        Тел. +38 067 640 99 00 <br>
-        +38 067 640 77 00 <br>
-        +38 056 733 95 59 <br>
-        sioni.dnepr@gmail.com</p>
-
-        
-      </div>
-    </div>
-    
       <div class="tabbed">
         <input type="radio" name="tabs" id="tab-nav-1" checked>
         <label for="tab-nav-1">ГЛАВНАЯ</label>
-        <input type="radio" name="tabs" id="tab-nav-2" checked>
+        <input type="radio" name="tabs" id="tab-nav-2">
         <label for="tab-nav-2">НАШИ РАБОТЫ</label>
         <input type="radio" name="tabs" id="tab-nav-3">
         <label for="tab-nav-3">УСЛУГИ</label>
@@ -96,9 +70,12 @@
             <div >
               <div class="tabs_1 "> 
                 <div class="iphone">
-                  <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>              
+                  <a href="+380676409900"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>              
                   </div>              
                   <div class="text-box"><h3>ГЛАВНАЯ<hr></h3>
+
+
+
 
 <p>Приветствуем Вас на сайте строительной компании <strong>«Sioni»</strong>.</p><br>
 
@@ -138,12 +115,88 @@
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <div class="text-box"><h3>НАШИ РАБОТЫ<hr></h3><span id="services"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+    <div class="slide">
+      <img src="http://anbulvar.com.ua/img/1124/112411.jpg" />
+        </div>
+    <div class="nav">
+      <label for="img-6" class="prev">&#x2039;</label>
+      <label for="img-2" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://kharkov-online.com/files/images/objava/29138/300075.jpeg" />
+        </div>
+    <div class="nav">
+      <label for="img-1" class="prev">&#x2039;</label>
+      <label for="img-3" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://rudsk.ru/assets/images/mag3.jpg" />
+        </div>
+    <div class="nav">
+      <label for="img-2" class="prev">&#x2039;</label>
+      <label for="img-4" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="https://i.ytimg.com/vi/AeWA8Y3husQ/maxresdefault.jpg" />
+        </div>
+    <div class="nav">
+      <label for="img-3" class="prev">&#x2039;</label>
+      <label for="img-5" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://slavpeople.com/upload/images/vezhi%20dnipropetrovsk(1).jpg" />
+        </div>
+    <div class="nav">
+      <label for="img-4" class="prev">&#x2039;</label>
+      <label for="img-6" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="http://dnepropetrovsk.avizinfo.com.ua/content/files/ukraine/201210/f_vid_sverhu_2_14_20122610141720.jpg" />
+        </div>
+    <div class="nav">
+      <label for="img-5" class="prev">&#x2039;</label>
+      <label for="img-1" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+<!--     <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li> -->
+</ul>
+
+
+
+
+                  <p>Среди заказов компании <b>«Sioni»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью.</div>
 
 </p >
               </div>
@@ -153,8 +206,106 @@
                 <div class="iphone">
                   <a href="#"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a> </div>              
                   <div class="text-box"><h3>УСЛУГИ<hr></h3>
-                  <p>СЛАЙДЕР <br>
+                  <h4>
                   <b>Наша компания предоставляет следующие виды услуг</b>:
+                  </h4>
+                  <br>
+
+<div class="slider2">
+  <section id="ps-container" class="ps-container">
+    
+      <!-- <div class="ps-header">
+      
+      </div> -->
+      
+      <div class="ps-contentwrapper">
+      
+        <div class="ps-content">
+          <!-- <h2>Наша компания предоставляет услуги:</h2> -->
+         <!--  <span class="ps-price">$120</span> -->
+          <p> Подготовку разрешительной документации, получение технических условий и согласований;</p>
+          <!-- <a href="#">Купить</a> -->
+        </div>
+        
+        <div class="ps-content">
+         <!--  <h2>Tobias</h2> -->
+         <!--  <span class="ps-price">$85</span> -->
+          <p>Проектирование и прохождение экспертиз;</p>
+       <!--    <a href="#">Купить</a> -->
+        </div>
+        
+        <div class="ps-content">
+         <!--  <h2>Pöang</h2> -->
+          <!-- <span class="ps-price">$140</span> -->
+          <p>Разработка архитектурно-дизайнерских решений;</p>
+         <!--  <a href="#">Купить</a> -->
+        </div>
+        
+        <div class="ps-content">
+        <!--   <h2>Mellby</h2> -->
+      <!--     <span class="ps-price">$195</span> -->
+          <p>Строительство гражданских зданий и сооружений;</p>
+          <!-- <a href="#">Купить</a> -->
+        </div>
+        
+        <div class="ps-content">
+        <!--   <h2>Torbjörn</h2> -->
+         <!--  <span class="ps-price">$30</span> -->
+          <p>Монтаж кондиционирования, вентиляции, отопления;</p>
+        <!--   <a href="#">Купить</a> -->
+        </div>
+        <div class="ps-content">
+         <!--  <h2>Torbjörn</h2> -->
+         <!--  <span class="ps-price">$30</span> -->
+          <p>Пуско-наладочные работы;</p>
+        <!--   <a href="#">Купить</a> -->
+        </div>
+<div class="ps-content">
+          <!-- <h2>Torbjörn</h2> -->
+         <!--  <span class="ps-price">$30</span> -->
+          <p>Комплектацию материалами и инженерным оборудованием;</p>
+        <!--   <a href="#">Купить</a> -->
+        </div>
+        <div class="ps-content">
+         <!--  <h2>Torbjörn</h2> -->
+         <!--  <span class="ps-price">$30</span> -->
+          <p>Сервисное обслуживание.</p>
+        <!--   <a href="#">Купить</a> -->
+        </div>
+           <div class="ps-content">
+         <!--  <h2>Torbjörn</h2> -->
+         <!--  <span class="ps-price">$30</span> -->
+          <p>Сервисное обслуживание.</p>
+        <!--   <a href="#">Купить</a> -->
+        </div>
+
+
+      </div>
+      
+      <div class="ps-slidewrapper">
+      
+        <div class="ps-slides">
+          <div style="background-image:url(images/1.jpg);"></div>
+          <div style="background-image:url(images/2.jpg);"></div>
+          <div style="background-image:url(images/3.jpg);"></div>
+          <div style="background-image:url(images/4.jpg);"></div>
+          <div style="background-image:url(images/5.jpg);"></div>
+          <div style="background-image:url(images/6.jpg);"></div>
+          <div style="background-image:url(images/7.jpg);"></div>
+          <div style="background-image:url(images/8.jpg);"></div>
+         
+        </div>
+        
+        <nav>
+          <a href="#" class="ps-prev" ></a>
+          <a href="#" class="ps-next" ></a>
+        </nav>
+      </div>
+    </section>
+</div>
+
+
+<p>
 <ul>  
   <li>Подготовку разрешительной документации, получение технических условий и согласований;</li>
   <li>Проектирование и прохождение экспертиз;</li>
@@ -164,13 +315,14 @@
   <li>Пуско-наладочные работы;</li>
   <li>Комплектацию материалами и инженерным оборудованием;</li>
   <li>Сервисное обслуживание.</li>
-</ul></p> 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</ul>
+Наши преимущества: 
+Опыт работы более 12 лет 
+Полный спектр работ от идей до покупки мебели 
+Гарантия на все виды работ 
+Сервисная поддержка 
+ 
+Компания <b>«Sioni»</b> - это опыт, качество и гарантия надежности!</p>
                 </div>
               </div>
             </div>
@@ -193,7 +345,13 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>Сплочённая команда нашей компании успешно реализовывает различные строительные заказы. Мы поможем Вам построить дом, начиная с идеи и создания чертежей будущего дома, заканчивая полной внутренней отделкой и сдачей объекта «под ключ». Или выполнить высококачественный ремонт Вашей квартиры.</p><br>
 
-<p>Среди заказов компании <b>«Sioni»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью. (здесь должна быть ссылка на фотографии законченных объектов)</p><br>
+<p>Среди заказов компании <b>«Sioni»</b> были элитные квартиры и магазины города Днепропетровска и его области; возведение домов, ремонт квартир и элитных магазинов по всей Украине и ближнему зарубежью. </p><br>
+
+
+
+
+
+
 
 <p>Наши сотрудники являются отличными профессионалами каждый в своей области, работают только с высококачественными материалами, с соблюдением всех строительных норм и правил. И потому мы гарантируем выполнение заказа в срок и соблюдение всех пунктов договора с заказчиком. Также предоставляем обязательное гарантийное обслуживание законченных объектов.</p><br>
 
@@ -205,19 +363,49 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>  
-             
-      </div> 
-  <footer class="footer_vs">
-      <div class="contacts">
-          <p><b>Контакты</b><br>
-            Адрес: г.Днепр<br>
-            ул. Хмельницкого 12<br>
-            Тел. +38 067 640 99 00 <br>
-            +38 067 640 77 00 <br>
-            +38 056 733 95 59 <br>
-            sioni.dnepr@gmail.com</p>        
+
+
+<div class="contacts">
+
+        <p>
+        <b>Контакты</b><br>
+        Адрес: г.Днепр<br>
+        ул. Князя Ярослава Мудрого,<br> 68 оф.219<br>
+        <b>Тел.</b> <br>
+        +38 067 640 99 00 <br>
+        +38 067 640 77 00 <br>
+        +38 056 733 95 59 <br>
+        sioni.dnepr@gmail.com</p>
+
+        
       </div>
-  </footer>  
-      <script type="text/javascript" src='js/script.js'></script>    
-    </body>
+<!-- Saide bar end-->
+  
+<script>
+     var carousels = document.querySelectorAll('#carousels .carousel');
+     var currentCarousel = 0;
+     var carouselInterval = setInterval(nextCarousel, 5000);
+
+     function nextCarousel() {
+      carousels[currentCarousel].className = 'carousel';
+      currentCarousel = (currentCarousel+1)%carousels.length;
+      carousels[currentCarousel].className = 'carousel demonstration';
+     }
+   </script>
+
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+        Slider.init();
+      
+      });
+    </script>
+
+
+
+</div>
+</body>
 </html>

@@ -1,204 +1,312 @@
-html, body{margin:0px; padding:0px; font-family:Arial, sans-serif;}
-div{position:relative;}
-.clear{clear:both;}
-.container, {
-	max-width:1000px;
-	margin:0px auto;
+* {
+	margin: 0px;
+	padding: 0px;	
 }
-p:first-letter{
-	font-weight:bold;
-	color:#000;
+
+.bar {
+	width: 20%;
+	height: 100vh;
+	background:rgba(229, 231, 231, 0.87);
+}
+.logo {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+
+}
+.logo img {
+	margin: 8% 0% 0% -8%;
+	width: 65%;
+	height: auto;
+
+/*<!-- MENU MOBILE-->*/
+}
+.sioni_logo_vs {
+	display: none;
+}
+
+/*<!-- MENU-->*/
+
+
+.tabbed {	
+	margin-top: 15%; 			
+}
+
+.tabbed > input {
+	display: none;
+}
+
+.tabbed > label {
+	display: block;
 	
-}
-.container{
-	padding:0px 0px 0px 220px;
-	box-sizing:border-box;
-}
-	.left{
-		
-		width:24%;
-		height:615px;
-		z-index:15;
-		margin-left:-220px;
-		float:left;
-		background:rgba(229, 231, 231, 0.87);
-	}
-	.phone{
-		background:#e4e8e8;
+	padding: 12px 20px;
+	margin: 5px 5px 5px 10px;
+	cursor: pointer;
+	transition: all .3s;
+	color:#515151;
+	font-size:26px;
+	font-weight: bold;
 
-	}
-	.fa-phone-square{
-		color: #4e4545;
-	}
-	.fa-phone-square:hover{
-		color: #342e2e;
-	}
-	.right{
-		width:30%;
-		height:615px;
-		float:left;
-		font-size:15px;
-		color:#000000;
-		background:rgba(230, 230, 230, 0.73);
-		
-	}
-	.right p,h3{margin:0px; padding: 45px 30px 30px 0px;}
-/*************далее стили для вертикального выпадающего меню при наведении**************************/
-.menuVertical{width:100%;height:auto;}
-	.menuVertical ul{
+}
+.tabbed > label:hover, .tabbed > input:checked + label {
+    background: rgba(180, 188, 193, 0.7);
+    color: #000000;
+    padding: 12px 5px 12px 12px;
 
-		display:block;
-		width:100%;
-		height:auto;
-		margin:0px;
-		padding:0px;
-		list-style:none;
-		position:relative;
-	}
-.menuVertical ul li{display:block; width:100%; height:auto; position:relative;}
-	.menuVertical ul li a{
-		position:relative;
-		display:block;
-		width:100%;
-		height:auto;
-		box-sizing:border-box;
-		font-size:23px;
-		text-transform:uppercase;
-		font-weight:semi-bold;
-		color:#515151;
-		line-height:1.2em;
-		padding:10px 15px;
-		
-		text-decoration:none;
-	}
-	.menuVertical ul  li:first-child a{border:0px;}
-	.menuVertical ul li a:hover, .menuVertical ul li:hover a{
-		color: #272424;
-	}
-	.menuVertical ul li ul{
-		position:absolute;
-		top:0px;
-		left:100%;
-		display:none;
-		width:auto;
-	}
-			/*******показываем выпадашку при наведении ********/
-.menuVertical ul li:hover ul{display:block;}
-	.menuVertical ul li ul li a{
-	white-space:nowrap;
-	text-transform:none;
-	padding:5px 20px;
-	}
-.menuVertical ul li ul li a:hover{
-	background:#75C1D4;
-	color:#0A3CC1;
 }
 
+.tabs > div {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateY(20deg);
+    transform-origin: left center;
+    transition: opacity .3s, transform .6s;
+    color: #000000;
+    
+}
+.tabs_1, .tabs_2, .tabs_3, .tabs_4, .tabs_5 {
+    /* background: rgba(229, 231, 231, 0.74); */
+    padding: 0px 35px;
 
-/*slider*/
-.bgstretcher-area { text-align: left; }
-.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
+    max-width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+    background: rgba(221, 221, 221, 1);
+    background: linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+    background: -moz-linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+    background: -webkit-linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+    background: -o-linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+    background: -ms-linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+}
+.text-box {
+	max-width: 50%;    
+}
+
+.text-box h3 {
+    margin-top: 30px;
+}
+
+q {
+	font-weight: bold;	
+}
+
+a {
+	text-decoration: none;
+	color: #515151;
+}
+
+.iphone {
+	width: 100%;
+	height: 30px;
+	padding: 60px 50px 55px 50px;
+	margin: -50px -50px 0px -50px;
+	font-size: 18px;
+	box-shadow: 0px 1px 10px 0px #7F6764; 
+
+	background: rgba(221, 221, 221, 1); 
+	background: linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+	background: -moz-linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+	background: -webkit-linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+	background: -o-linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+    background: -ms-linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+
+}
+.fa-phone-square{
+	    color: #18569c;
+}
+
+
+
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1), 
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+ #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+  #tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
+   #tab-nav-5:checked ~ .tabs > div:nth-of-type(5)
+    {
+    transform: rotateY(0deg);
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.footer_vs {
+	/*display: none;*/
+}
+
+.mtoggle {
+	color: #2574a9;
+}
+
+.sioni_logo_vs { z-index: 2:}
+/**********FIS***********/
+
+
+.iphone {
+    background: rgba(229, 231, 231, 0.5);
+    width: 100%;
+    height: 30px;
+    padding: 60px 50px 55px 50px;
+    margin: -50px -50px 0px -50px;
+    font-size: 18px;
+    box-shadow: 0px 1px 10px 0px #7F6764;
+}
+
+/*CONTACTS*/
+.contacts {
 	position: absolute;
-	top: 0;
-	left: 0;
+    color: #272424;
+    margin-left: 35px;
+    bottom: 20px;
+    
 }
-.bgstretcher UL, .bgstretcher UL LI {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.contacts p {
+   font-weight: bolder;
+   font-size: 16px;
 }
-.bgstretcher {
-	background: black;
-	overflow: hidden;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-	_position: absolute; /*IE6 doesn't support fixed positioning*/
-	top: 0;
-	left: 0;
+
+
+/*slider bg*/
+
+#carousels {
+    position: relative;
+    z-index: -1;
+
 }
-/*slider-end*/
+
+#carousels img {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel {
+    height: 100vh;    
+    position: absolute;
+    left: 0;
+    top: -3px;
+    opacity: 0;
+    transition: opacity 3s;
+
+}
+
+.demonstration {
+    opacity: 1;
+} 
+
+/*Слайдер работы*/
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+/*html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }*/
+
+.slides {
+    padding: 0;
+    max-width: 609px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
 
 
 
-/*slider uslugi*/
 
 
-
- 
-#slideshow #slideshowWindow {
-	width:63vw;
-	height:257px;
-	margin:0;
-	padding:0;
-	position:relative;
-	overflow:hidden;
-
-}
- 
-#slideshow #slideshowWindow .slide {
-	margin:0;
-	padding:0;
-	width:500px; 
-	height:257px;
-	position:relative;
-	
-}
-#slideshow #slideshowWindow .slide img{
-	width: 100%;
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
- 
-#slideshow #slideshowWindow .slide .slideText {
-	position:absolute;
-	top:130px;
-	left:0px;
-	width:100%;
-	height:130px;
-	background-image:url(../images/greyBg.png);
-	background-repeat:repeat;
-	margin:0;
-	padding:0;
-	color:#ffffff;
-	font-family:Myriad Pro, Arial, Helvetica, sans-serif;
-}
- 
-#slideshow #slideshowWindow .slide .slideText a:link, #slideshow #slideshowWindow .slide .slideText a:visited {
-	color:#ffffff;
-	text-decoration:none;
-}
- 
-#slideshow #slideshowWindow .slide .slideText h2, #slideshow #slideshowWindow .slide .slideText p {
-	margin:10px 0 0 10px;
-	padding:0;
-}
- 
-/*Navigation*/
+.slides input { display: none; }
 
-.nav {
-	display:block;
-	text-indent:-10000px;
-	position:absolute;
-	cursor:pointer;
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    max-width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
 }
- 
-#leftNav {
-	top:228px;
-	left:350px;
-	/*width:94px;
-	height:34px;*/
-	background-image:url(../images/left.png);
-	background-repeat:no-repeat;
-	z-index:999;
+
+.slide img {
+    max-width: 100%;
+    height: auto;
 }
- 
-#rightNav {
-	top:230px;
-	left:450px;
-	/*width:53px;
-	height:26px;*/
-	background-image:url(../images/right.png);
-	background-repeat:no-repeat;
-	z-index:999;
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
- 
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+

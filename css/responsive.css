@@ -1,13 +1,90 @@
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1450px) {
+.tabbed > label {
+   
+    font-size:1em;
+    font-weight: bolder;
+   
+}
+.contacts p {
+    
+    font-size: 14px;
 
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+.nav label {
+    max-width: 200px;
+    height: 300px;    
+}
 
+.slides {  
+    max-width: 609px;
+    max-height: 409px;   
+}
+
+
+}
+
+@media (min-width: 993px) and (max-width: 1190px) {
+    .nav label {
+    width: 180px;
+    height: 240px;    
+}
+
+.slides {  
+    max-width: 609px;
+    max-height: 320px;   
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+.tabbed > label {
+   
+    font-size:0.9em;
+   
+}
+.contacts p {
+    
+    font-size: 0.9em;
+}
+.contacts {
+    position: absolute;
+    color: #272424;
+    margin-left: 5px;
+    bottom: 20px;
+}
+.tabbed > label {
+    font-size: 13px;
+    padding: 12px 5px; 
+}
+
+.nav label {
+    max-width: 130px;
+    height: 170px;    
+}
+
+.slides {  
+    max-width: 609px;
+    max-height: 250px;   
+}
 }
 
 
 @media  (max-width: 767px) {
+    .bar {
+    width: 100%;
+   
+}
+.logo {
+   display: none;
+}
+
+.contacts {
+    position: static;
+    text-align: center;
+    margin-left: 0px;
+    padding: 10px 0px;
+    background: #D2D2D2;
+}
 
 .tabbed {
     width: 100%; 
@@ -79,7 +156,7 @@
     min-height: 150px;    
     display: block;   
     background:rgba(229, 231, 231, 1.0);    
-    z-index: 1;
+    z-index: 9999;
 }
 
 .sioni_logo_vs > input {
@@ -195,5 +272,17 @@ body {
     text-align: center;
 }
 
+.nav label {
+    max-width: 150px;
+    max-height: 190px;    
+}
 
+.slides {  
+    max-width: 609px;
+    max-height: 280px;   
+}
+
+.slider2 {   
+    margin: 20px 0px;
+}
 }
