@@ -1,0 +1,316 @@
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+body {
+	height: 100vh;
+}
+
+.bar {
+	width: 20%;
+	height: 100vh;
+	background:rgba(185, 222, 255, 0.88);
+}
+.logo {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+
+}
+.logo img {
+	margin: 8% 0% 0% -8%;
+	width: 65%;
+	height: auto;
+
+/*<!-- MENU MOBILE-->*/
+}
+.sioni_logo_vs {
+	display: none;
+}
+
+/*<!-- MENU-->*/
+
+
+.tabbed {	
+	margin-top: 15%; 			
+}
+
+.tabbed > input {
+	display: none;
+}
+
+.tabbed > label {
+	display: block;
+	
+	padding: 12px 20px;
+	margin: 5px 5px 5px 10px;
+	cursor: pointer;
+	transition: all .3s;
+	color:#515151;
+	font-size:26px;
+	font-weight: bold;
+
+}
+.tabbed > label:hover, .tabbed > input:checked + label {
+    background: #9FBDE3;
+    color: #000000;
+    padding: 12px 5px 12px 12px;
+
+}
+
+.tabs > div {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateY(20deg);
+    transform-origin: left center;
+    transition: opacity .3s, transform .6s;
+    color: #000000;
+    
+}
+.tabs_1, .tabs_2, .tabs_3, .tabs_4, .tabs_5 {
+    /* background: rgba(229, 231, 231, 0.74); */
+    padding: 0px 35px;
+
+    max-width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+    background: rgba(221, 221, 221, 1); 
+    background: linear-gradient(0deg, rgba(185, 222, 255, 0.98), transparent );
+    background: -moz-linear-gradient(0deg, rgba(185, 222, 255, 0.98), transparent );
+    background: -webkit-linear-gradient(0deg, rgba(185, 222, 255, 0.98), transparent );
+    background: -o-linear-gradient(0deg, rgba(185, 222, 255, 0.98), transparent );
+    background: -ms-linear-gradient(0deg, rgba(137, 196, 244, 0.98), transparent );
+}
+.text-box {
+	max-width: 50%;
+}
+
+.text-box h3 {
+    margin-top: 30px;
+}
+
+q {
+	font-weight: bold;
+	margin-bottom : 15px;
+}
+a{
+	text-decoration: none;
+	color: #515151;
+}
+
+.iphone {
+	width: 100%;
+	height: 30px;
+	padding: 60px 50px 55px 50px;
+	margin: -50px -50px 0px -50px;
+	font-size: 18px;
+	box-shadow: 0px 1px 10px 0px #7F6764; 
+
+	background: rgba(221, 221, 221, 1); 
+	background: linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+	background: -moz-linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+	background: -webkit-linear-gradient(0deg, rgba(229, 231, 231, 0.98), transparent );
+	background: -o-linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+    background: -ms-linear-gradient(90deg, rgba(229, 231, 231, 0.98), transparent );
+
+}
+.fa-phone-square{
+	    color: #18569c;
+}
+
+
+
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1), 
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
+#tab-nav-5:checked ~ .tabs > div:nth-of-type(5)
+    {
+    transform: rotateY(0deg);
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.footer_vs {
+	/*display: none;*/
+}
+
+.mtoggle {
+	color: #2574a9;
+}
+
+.sioni_logo_vs { z-index: 2:}
+/**********FIS***********/
+
+
+.iphone {
+    background: rgba(229, 231, 231, 0.5);
+    width: 100%;
+    height: 30px;
+    padding: 60px 50px 55px 50px;
+    margin: -50px -50px 0px -50px;
+    font-size: 18px;
+    box-shadow: 0px 1px 10px 0px #7F6764;
+}
+
+/*CONTACTS*/
+.contacts {
+	position: absolute;
+    color: #272424;
+    margin-left: 35px;
+    bottom: 20px;
+    
+}
+.contacts p {
+   font-weight: bolder;
+   font-size: 16px;
+}
+
+
+/*slider bg*/
+
+#carousels {
+    position: relative;
+    z-index: -1;
+
+}
+
+#carousels img {
+    width: 100%;
+    height: 99.4vh;
+}
+
+.carousel {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.demonstration {
+    opacity: 1;
+} 
+
+/*Слайдер работы*/
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+/*html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }*/
+
+.slides {
+    padding: 0;
+    max-width: 609px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    max-width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+      opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
