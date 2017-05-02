@@ -2,9 +2,15 @@
 	margin: 0px;
 	padding: 0px;	
 }
+
+@import url(http://allfont.ru/allfont.css?fonts=roboto-regular);
+
 body {
 	height: 100vh;
+    font-family: 'Roboto Regular', arial;
 }
+
+ 
 
 .bar {
 	width: 20%;

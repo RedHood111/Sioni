@@ -3,6 +3,12 @@
 	padding: 0px;	
 }
 
+@import url(http://allfont.ru/allfont.css?fonts=roboto-regular);
+
+body {
+    font-family: 'Roboto Regular', arial;
+}
+
 .bar {
 	width: 20%;
 	height: 100vh;
@@ -102,6 +108,11 @@ q {
 a {
 	text-decoration: none;
 	color: #515151;
+}
+.aClimat{
+    position: initial;
+    width: 257px;
+    height: 42px;
 }
 
 .iphone {
