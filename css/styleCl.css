@@ -3,8 +3,10 @@
 	padding: 0px;	
 }
 
-@import url(http://allfont.ru/allfont.css?fonts=roboto-regular);
-
+@font-face {
+    font-family: Roboto Regular; /* Гарнитура шрифта */
+    src: url(../fonts/roboto-regular_[allfont.ru].ttf); /* Путь к файлу со шрифтом */
+   }
 body {
 	height: 100vh;
     font-family: 'Roboto Regular', arial;
