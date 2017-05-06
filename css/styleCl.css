@@ -196,15 +196,20 @@ a{
 
 #carousels img {
     width: 100%;
-    height: 99.4vh;
+   /* height: 99.92vh;*/
+
 }
 
 .carousel {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;    
     position: absolute;
     left: 0;
-    top: 0px;
+    top: -3px;
     opacity: 0;
     transition: opacity 3s;
+
 }
 
 .demonstration {
