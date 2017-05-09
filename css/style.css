@@ -176,17 +176,18 @@ a {
 }
 
 /*CONTACTS*/
-.contacts {
-	position: absolute;
+.contacts {	
     color: #272424;
-    margin-left: 35px;
-    bottom: 20px;
-    
+    margin-left: 35px; 
+    padding-top: 65%   
 }
+
 .contacts p {
    font-weight: bolder;
    font-size: 16px;
 }
+
+
 
 
 /*slider bg*/
